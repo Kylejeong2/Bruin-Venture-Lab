@@ -4,24 +4,20 @@ import {
   Wrapper,
   Inner,
   Header,
-  BannerCtn,
+  // BannerCtn,
   Edges,
   Edge,
   Title,
-  BriefNote,
+  // BriefNote,
 } from "./styles";
 import MaskText from "@/components/Common/MaskText";
-import RevealCover from "@/components/Common/RevealCover";
-import { Div } from "../Featured/styles";
-import { imageVariants } from "../Featured";
 import { useIsMobile } from "../../../../libs/useIsMobile";
-import first_meeting from "../../../../public/first_meeting.jpeg";
 import {
-  desktopBriefNotePhrase,
+  // desktopBriefNotePhrase,
   desktopHeaderPhrase,
   desktopParagraphPhrase,
   edges,
-  mobileBriefNotePhrase,
+  // mobileBriefNotePhrase,
   mobileHeaderPhrase,
   mobileParagraphPhrase,
 } from "./constants";

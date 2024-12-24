@@ -64,4 +64,4 @@ export const testimonials = [
   // },
 ];
 
-export const desktopHeaderPhrase = ["Meet Our Leadership Team"];
+export const desktopHeaderPhrase = ["Meet Our Leadership"];

@@ -8,51 +8,47 @@ export const Wrapper = styled.section`
 `;
 
 export const Inner = styled.div`
-  max-width: 1920px;
-  width: 100%;
+  max-width: 1440px;
+  width: 90%;
   margin: 0 auto;
 `;
 
 export const Header = styled.header`
   text-align: center;
   margin-bottom: 3rem;
-  padding: 0 2rem;
 
   h2 {
     font-size: 1.5rem;
     font-weight: 500;
     color: #989898;
-    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.25rem;
+    }
   }
 `;
 
 export const LogoGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  align-items: stretch;
-  justify-items: stretch;
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  height: 100px;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
-    height: 200px;
   }
 `;
 
 export const LogoContainer = styled.div`
-  width: 100%;
-  height: 100%;
+  aspect-ratio: 2/1;
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   background: #0f0f0f;
-  padding: 0.5rem;
+  transition: background-color 0.2s ease;
 
-  img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain;
-    padding: 1rem;
+  &:hover {
+    background: #1a1a1a;
   }
 `;

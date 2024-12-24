@@ -33,8 +33,15 @@ const Timeline = () => {
           <Image
             src="/VEST_Recruiting.png"
             alt="VEST Timeline"
-            fill
-            style={{ objectFit: "contain" }}
+            width={1200}
+            height={600}
+            style={{ 
+              width: '100%',
+              height: 'auto',
+              maxHeight: '600px',
+              objectFit: 'contain'
+            }}
+            priority
           />
         </TimelineContainer>
       </Inner>

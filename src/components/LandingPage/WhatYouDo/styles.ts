@@ -7,10 +7,10 @@ export const Wrapper = styled.section``;
 export const Inner = styled.div`
   max-width: 1440px;
   width: 90%;
-  margin: 12.38rem auto 0;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
-    margin-top: 6.44rem;
+    margin-top: 0;
   }
 `;
 

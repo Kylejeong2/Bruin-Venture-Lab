@@ -2,13 +2,13 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
-  margin-top: 8.56rem;
+  margin-top: 4rem;
   background: var(--emerald);
 `;
 
 export const Inner = styled.div`
   display: flex;
-  padding: 6.25rem 0;
+  padding: 4rem 0;
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
@@ -20,15 +20,15 @@ export const Inner = styled.div`
 export const Header = styled.header`
   text-align: center;
   max-width: 48.5rem;
-  margin: 0 auto 6.5rem;
+  margin: 0 auto 4rem;
   h1 {
     color: var(--Background, #070606);
-    font-size: 4.75rem;
+    font-size: 4rem;
     font-weight: 500;
   }
 
   @media (max-width: 768px) {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     h1 {
       font-size: 2rem;
     }
@@ -38,13 +38,13 @@ export const Header = styled.header`
 export const TestimonialWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2.5rem;
+  gap: 2rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 
   &:nth-child(2) {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
@@ -58,17 +58,17 @@ export const TestimonialWrapper = styled.div`
 
 export const Testimonial = styled.div`
   display: flex;
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background: rgba(255, 255, 255, 0.15);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   backdrop-filter: blur(12px);
-  gap: 1.5rem;
+  gap: 1rem;
   transition: transform 0.2s ease-in-out;
   height: 100%;
-  min-height: 24rem;
+  min-height: 20rem;
 
   &:hover {
     transform: translateY(-5px);
@@ -77,12 +77,12 @@ export const Testimonial = styled.div`
 `;
 
 export const Avatar = styled.div`
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 1rem;
-  border: 4px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 0.75rem;
+  border: 3px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 
   img {
@@ -92,27 +92,27 @@ export const Avatar = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
   }
 `;
 
 export const Name = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.25rem;
   text-align: center;
 
   h3 {
     color: var(--Background, #070606);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: -0.02em;
   }
 
   p {
     color: #292929;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -121,15 +121,15 @@ export const Name = styled.div`
 
 export const Testimony = styled.p`
   color: #292929;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
   max-width: 90%;
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 `;
 
@@ -178,16 +178,16 @@ export const Next = styled.div`
 export const CardGrid = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 `;
 
 export const TopRow = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2.5rem;
+  gap: 2rem;
   width: 66.67%;
   margin: 0 auto;
 
@@ -200,7 +200,7 @@ export const TopRow = styled.div`
 export const BottomRow = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2.5rem;
+  gap: 2rem;
   width: 100%;
 
   @media (max-width: 768px) {

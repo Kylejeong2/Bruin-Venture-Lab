@@ -1,37 +1,27 @@
 'use client';
 import Image from 'next/image';
-import ParallaxText from '@/components/Common/ParallaxImages';
+import { Wrapper, Inner, ImageContainer } from './styles';
 import companies_image from '../../../../public/images/companies.png';
-import { Wrapper, Inner, ImageContainer, ParallaxImages } from './styles';
-import RevealCover from '@/components/Common/RevealCover';
-
-export const imageVariants = {
-  hidden: {
-    scale: 1.6,
-  },
-  visible: {
-    scale: 1,
-    transition: {
-      duration: 1.4,
-      ease: [0.6, 0.05, -0.01, 0.9],
-      delay: 0.2,
-    },
-  },
-};
 
 const Featured = () => {
   return (
     <Wrapper>
       <Inner>
+        <h2>Winter 2025 Companies</h2>
         <ImageContainer>
-          <RevealCover />
+          <Image 
+            src={companies_image} 
+            alt="Companies we're working with"
+            width={1200}
+            height={200}
+            style={{
+              maxWidth: '100%',
+              height: 'auto',
+              objectFit: 'contain'
+            }}
+            priority
+          />
         </ImageContainer>
-        <h2>Companies</h2>
-        <ParallaxImages>
-          <ParallaxText baseVelocity={-4}>
-            <Image src={companies_image} alt="comapanies" />
-          </ParallaxText>
-        </ParallaxImages>
       </Inner>
     </Wrapper>
   );

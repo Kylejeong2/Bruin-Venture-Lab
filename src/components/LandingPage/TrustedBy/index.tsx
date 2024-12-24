@@ -26,8 +26,14 @@ const TrustedBy = () => {
                 <Image
                   src={logo.logo}
                   alt={`${logo.name} logo`}
-                  fill
-                  style={{ objectFit: "contain" }}
+                  width={200}
+                  height={100}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'contain',
+                    padding: '1rem'
+                  }}
                 />
               </LogoContainer>
             </Link>
